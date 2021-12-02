@@ -2,11 +2,11 @@
 " in github repos, personal blogs, and stackoverflow answers. i even copied their
 " commenting (hehe).
 set nocompatible
-filetype plugin indent on	 "load plugin and indent files associated a detected filetype
+filetype plugin indent on	 "load plugin and indent files associated with a detected filetype
 syntax on
 colorscheme molokai
 set autoindent             " Indent according to previous line.
-set smartindent            " Intellegently dedent / indent new lines based on rules.
+set smartindent            " Intelligently dedent / indent new lines based on rules.
 set expandtab              " Use spaces instead of tabs.
 set tabstop     =2         " Tab key indents by 2 spaces
 set softtabstop =2         " Tab key indents by 2 spaces.
