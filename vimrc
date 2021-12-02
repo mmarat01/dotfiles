@@ -1,4 +1,4 @@
-" this vimrc is a frankestein combination of many people's vimrc files found online
+" this a frankestein combination of many people's vimrc files found online
 " in github repos, personal blogs, and stackoverflow answers. i even copied their
 " commenting (hehe).
 set nocompatible
@@ -31,9 +31,18 @@ set nobackup noswapfile nowritebackup            " disable backup/swap files
 set undofile undodir=~/.vim/undo undolevels=9999 " undo options
 set cursorline                                   " highlight current line following cursor
 set ruler                                        " cursor position in statusline
+set path      +=**        " search down into all subfolders
+set wildmenu              " display all matching files when tabbing complete
 " So we don't have to press shift when we want to get into command mode.
 nnoremap ; :
 vnoremap ; :
+" tweaks for file browsing on netrw
+let g:netrw_banner       =0            " hide ugly top banner
+let g:netrw_browse_split =4            " open in prior window (?)
+let g:netrw_altv         =1            " open splits to the right
+let g:netrw_liststyle    =3            " tree view
+let g:netrw_list_hide    =netrw_gitignore#Hide()    " ignore him
+let g:netrw_list_hide    .=',\(^\|\s\s\)\zs\.\S\+'  " regex i.e. no idea what this hides
 " Visual line nav, not real line nav
 " If you wrap lines, vim by default won't let you move down one line to the
 " wrapped portion. This fixes that.
