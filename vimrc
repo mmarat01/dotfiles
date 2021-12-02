@@ -1,5 +1,5 @@
 " this vimrc is a frankestein combination of many people's vimrc files found online
-" in github repos, personal blogs, and stackoverflow answers. i even copied their 
+" in github repos, personal blogs, and stackoverflow answers. i even copied their
 " commenting (hehe).
 set nocompatible
 filetype plugin indent on	 "load plugin and indent files associated a detected filetype
@@ -40,8 +40,25 @@ vnoremap ; :
 noremap j gj
 noremap k gk
 
+"
+" PLUGINS: actually, i'm trying to avoid these for now. i do see the benefit
+" in having some, but i'm learning vim for the sake of portability, so i'll go
+" vanilla. i'd like to have a much more IDE-like setup with plugins by
+" switching to neovim down the road -- but that's irrelevant for this vimrc :)
+
 " NERDTree: reasonable defaults from webinstall.dev/vim-nerdtree
-source ~/.vim/plugins/nerdtree.vim
+"source ~/.vim/plugins/nerdtree.vim
 " another nerdtree thing to toggle it properly
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd p
+
+" Prettier: reasonable defaults from webinstall.dev/vim-prettier
+"source ~/.vim/plugins/prettier.vim
+" we also want to get rid of accidental trailing whitespace on save
+"autocmd BufWritePre * :%s/\s\+$//e
+" autoformat settings
+" let g:prettier#autoformat = 1
+"let g:prettier#autoformat_require_pragma = 0
+" list all of the extensions for which prettier should run
+"autocmd BufWritePre .babelrc,.eslintrc,.jshintrc,*.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
