@@ -79,7 +79,8 @@ alias python=/opt/homebrew/bin/python3
 alias pip=/opt/homebrew/bin/pip3
 
 weather () {
-  curl "https://wttr.in/{$1-Somerville}"
+  LOCATION="${1:-Somerville}"
+  curl wttr.in/"$LOCATION"
 }
 
 export NVM_DIR="$HOME/.nvm"
