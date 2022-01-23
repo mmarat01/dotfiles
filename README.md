@@ -1,2 +1,2 @@
 # dotfiles
-. files and some other stuff
+core, essential . files and some other stuff
