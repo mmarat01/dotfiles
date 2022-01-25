@@ -30,6 +30,7 @@ set cursorline                                   " highlight current line follow
 set ruler                                        " cursor position in statusline
 set path      +=**        " search down into all subfolders
 set wildmenu              " display all matching files when tabbing complete
+set foldmethod=manual     " select area on v mode and zf, zc to close, zo to open
 " So we don't have to press shift when we want to get into command mode.
 nnoremap ; :
 vnoremap ; :
