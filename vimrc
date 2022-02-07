@@ -10,8 +10,9 @@ Plug 'itchyny/lightline.vim'
 call plug#end()
 
 colorscheme jcs            " colorscheme by that one guy who makes OpenBSD
+" alt colors: apprentice
 let g:lightline = {
-        \'colorscheme': 'apprentice',
+        \'colorscheme': 'seoul256'
       \ }
 set term=screen-256color
 set autoindent             " Indent according to previous line.
