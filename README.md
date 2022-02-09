@@ -1,5 +1,5 @@
 # dotfiles
-core, essential . files and some other stuff
+core, essential dotfiles and some other stuff
 
 notes:
   - my vim plugin manager is vim-plug
