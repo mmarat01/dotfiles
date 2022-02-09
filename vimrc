@@ -6,7 +6,9 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fireplace'
 Plug 'itchyny/lightline.vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 colorscheme jcs            " colorscheme by that one guy who makes OpenBSD
